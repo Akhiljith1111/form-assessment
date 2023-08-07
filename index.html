@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Application Form</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+<form name="Application">
+
+    <h1>LOAN APPLICATION</h1>
+
+<legend>Basic Information </legend>
+  
+  <label for="first-name">First Name : </label>
+  <input type="text" id="first-name" name="first-name" required> 
+<br>
+
+  <label for="middle-name">middle Name : </label>
+  <input type="text" id="middle-name" name="middle-name"> 
+<br>
+
+  <label for="last-name">Last Name : </label>
+  <input type="text" id="last-name" name="last-name" required>
+<br>
+
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email"  placeholder="abcd@gmail.com" required>
+<br>
+
+  <label for="phone">Contact Number : </label>
+  <input type="tel" id="phone" pattern="[0-9]{10}" name="phone" title="Please enter a 10-digit number" required> 
+<br>
+
+  <label for="address">Home Address : </label>
+  <input type="text" id="address" name="address" required>
+<br>
+
+<legend>Work Information</legend>
+
+  <label for="employment-status">Employment Status : </label>
+  <select id="employment-status" name="employment-status" required>
+        <option value="self-employed">Self - Employed</option>
+        <option value="salaried">Salaried</option>
+        <option value="unemployed">Unemployed</option>
+   </select>    
+ <br>   
+
+   <label for="employer-address">Employer Address : </label>
+   <input type="text" id="employer-address" name="employer-address" required>
+<br>
+
+<legend>Loan Amount and Length</legend>
+
+   <label for="loan-amount">Loan Amount : </label>
+   <input type="number" id="loan-amount" name="loan-amount" required>
+<br>
+
+   <label for="loan-length">Loan Length : </label>
+   <input type="radio" id="loan-length" name="loan-length" value="5">5
+   <input type="radio" id="loan-length" name="loan-length" value="10">10
+   <input type="radio" id="loan-length" name="loan-length" value="15">15
+   <input type="radio" id="loan-length" name="loan-length" value="20">20
+
+<legend>Other Details</legend>
+
+   <label for="status">Marital Status</label>
+   <input type="radio" id="status" name="status" value="single">Single
+   <input type="radio" id="status" name="status" value="married">Married
+   <input type="radio" id="status" name="status" value="divorced">Divorced
+   <br>
+
+   <label for="comments">Comments</label>
+   <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+<br>
+
+<legend>Declaration</legend>
+
+  <input type="checkbox" id="selfDeclaration" name="selfDeclaration" required>
+  <label for="selfDeclaration">I confirm that all the information given above is True</label>
+
+<input type="submit" name="submit" value="Submit">
+</form>
+<script src="index.js"></script>
+</body>
+</html>
