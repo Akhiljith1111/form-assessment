@@ -8,4 +8,5 @@ form.addEventListener("submit", function(event) {
   });
   let json = JSON.stringify(object);
   console.log(json);
+  form.reset();
 }, false);
